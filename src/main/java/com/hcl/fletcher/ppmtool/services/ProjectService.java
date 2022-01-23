@@ -2,9 +2,11 @@ package com.hcl.fletcher.ppmtool.services;
 
 import com.hcl.fletcher.ppmtool.domain.Backlog;
 import com.hcl.fletcher.ppmtool.domain.Project;
+import com.hcl.fletcher.ppmtool.domain.ProjectTask;
 import com.hcl.fletcher.ppmtool.exceptions.ProjectIdException;
 import com.hcl.fletcher.ppmtool.repositories.BacklogRepository;
 import com.hcl.fletcher.ppmtool.repositories.ProjectRepository;
+import com.hcl.fletcher.ppmtool.repositories.ProjectTaskRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
