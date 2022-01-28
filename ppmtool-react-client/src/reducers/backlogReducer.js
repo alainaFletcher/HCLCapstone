@@ -1,8 +1,8 @@
 import {
-    GET_BACKLOG,  
-    GET_PROJECT_TASK,  
+    GET_BACKLOG,
+    GET_PROJECT_TASK,
     DELETE_PROJECT_TASK
-}  from "../actions/types";
+  } from "../actions/types";
   
   const initialState = {
     project_tasks: [],
