@@ -16,10 +16,20 @@
       "src": "logo512.png",
       "type": "image/png",
       "sizes": "512x512"
+    },
+    {
+      "src": "newicon.png",
+      "type": "image/png",
+      "sizes": "500X500"
+    },
+    {
+      "src": "home.png",
+      "type": "image/png",
+      "sizes": "2000x1030"
     }
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#e1d5b8",
+  "background_color": "#e1d5b8"
 }

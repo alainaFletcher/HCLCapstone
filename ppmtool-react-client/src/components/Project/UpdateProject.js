@@ -119,7 +119,7 @@ class UpdateProject extends Component {
                     <div className="invalid-feedback">{errors.description}</div>
                   )}
                 </div>
-                <h6>Start Date</h6>
+                <h6 name="hm">Start Date</h6>
                 <div className="form-group">
                   <input
                     type="date"
@@ -139,10 +139,12 @@ class UpdateProject extends Component {
                     onChange={this.onChange}
                   />
                 </div>
+                <br/>
 
                 <input
                   type="submit"
-                  className="btn btn-primary btn-block mt-4"
+                  class="butts"
+                    value="Update"
                 />
               </form>
             </div>

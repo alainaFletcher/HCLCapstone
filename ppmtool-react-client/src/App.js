@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import Dashboard from "./components/Dashboard";
+import Home from "./components/Home";
 import Header from "./components/Layout/Header";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Route } from "react-router-dom";
@@ -17,6 +18,7 @@ class App extends Component {
           <div className="App">
             <Header />
             <Route exact path="/dashboard" component={Dashboard} />
+            <Route exact path="/home" component={Home} />
             <Route exact path="/addProject" component={AddProject} />
             <Route exact path="/updateProject/:id" component={UpdateProject} />
           </div>
