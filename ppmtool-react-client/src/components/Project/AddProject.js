@@ -49,11 +49,11 @@ class AddProject extends Component {
 
     return (
       <div>
-        <div className="project">
-          <div className="container">
+        <div className="project mr-5">
+          <div className="container w-26 p-3 mr-5 shadow-md rounded">
             <div className="row">
               <div className="col-md-8 m-auto">
-                <h5 className="display-4 text-center">Create Project Form</h5>
+                <h6 className="display-6 text-center">Create Project</h6>
                 <hr />
                 <form onSubmit={this.onSubmit}>
                   <div className="form-group">
@@ -73,6 +73,7 @@ class AddProject extends Component {
                       </div>
                     )}
                   </div>
+                  <br/>
                   <div className="form-group">
                     <input
                       type="text"
@@ -90,6 +91,7 @@ class AddProject extends Component {
                       </div>
                     )}
                   </div>
+                  <br/>
                   <div className="form-group">
                     <textarea
                       className={classnames("form-control form-control-lg", {
@@ -106,6 +108,7 @@ class AddProject extends Component {
                       </div>
                     )}
                   </div>
+                  <br/>
                   <h6 name="hm">Start Date</h6>
                   <div className="form-group">
                     <input
@@ -116,6 +119,7 @@ class AddProject extends Component {
                       onChange={this.onChange}
                     />
                   </div>
+                  <br/>
                   <h6>Estimated End Date</h6>
                   <div className="form-group">
                     <input

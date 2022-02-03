@@ -22,10 +22,16 @@ class Header extends Component {
           <Bars />
           <NavMenu>
             <NavLink to="/home" activestyle>
-              Home
+            <i class="fas fa-home"></i>
             </NavLink>
             <NavLink to="/dashboard" activestyle>
-              Dashboard
+            <i class="fas fa-list-alt"></i> 
+            </NavLink>
+            <NavLink to="/register" activestyle>
+            <i class="fas fa-user-plus"></i> 
+            </NavLink>
+            <NavLink to="/login" activestyle>
+            <i class="fas fa-sign-in-alt"></i>Login
             </NavLink>
           </NavMenu>
         </Nav>

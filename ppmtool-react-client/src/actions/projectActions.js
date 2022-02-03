@@ -1,5 +1,6 @@
 import axios from "axios";
-import { GET_ERRORS, GET_PROJECTS, GET_PROJECT, DELETE_PROJECT } from "./types";
+import { GET_ERRORS , GET_PROJECTS,GET_PROJECT,UPDATE_PROJECT,DELETE_PROJECT,COUNT_PROJECT_TASKS,SUM_PROJECT_TASKS,SUM_PROJECTS} from "./types"
+import { COUNT } from "arg";
 
 export const createProject = (project, history) => async dispatch => {
   try {
@@ -50,3 +51,53 @@ export const deleteProject = id => async dispatch => {
     });
   }
 };
+
+// COUNT TASKS ON PROJECT 
+export const countProjectTasks = (id) => async dispatch => {
+
+
+  // Find redux way to DISPATCH 
+  const res = await axios.get(`/api/backlog/count/all/${id}`)
+
+
+  return res.data;
+
+  // dispatch({
+  //     type: COUNT_PROJECT_TASKS,
+  //     payload: res.data
+  // })
+  
+  
+}
+
+// SUM TASKS 
+export const sumProjectTasks = () => async dispatch => {
+
+  // Find redux way to DISPATCH 
+  const res = await axios.get(`/api/backlog/sum`)
+
+  return res.data;
+
+  // dispatch({
+  //     type: SUM_PROJECT_TASKS
+  //     payload: res.data
+  // })
+  
+  
+}
+
+// SUM TASKS 
+export const sumProjects = () => async dispatch => {
+
+  // Find redux way to DISPATCH 
+  const res = await axios.get(`/api/project/sum`)
+
+  return res.data;
+
+  // dispatch({
+  //     type: SUM_PROJECT_TASKS
+  //     payload: res.data
+  // })
+  
+  
+}
